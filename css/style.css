@@ -56,9 +56,29 @@ img{
 .planning p{
     margin: 1rem;
 }
-.planning .box{
+.planning .box2{
     background-color: white;
     margin: 0 5rem;
+}
+
+/* testimonal section */
+.testimonials{
+    text-align: center;
+    padding: 3rem;
+}
+.photo-box{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    background-image: url(../img/testimonial1.jpg);
+    background-size:cover;
+    background-position: center;
+    
+}
+.testimonial-card{
+    text-align: center;
+    margin: 1rem 0;
+    background-color: plum;
 }
 
 /* !TYPOGRAPHY */
@@ -90,6 +110,12 @@ header a{
 @media screen and (min-width:768px){
 
     .col{
+        display: flex;
+    }
+    .planning{
+        display: flex;
+    }
+    .testimonial-card{
         display: flex;
     }
 }
