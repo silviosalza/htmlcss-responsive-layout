@@ -12,6 +12,11 @@
     display: flex;
     justify-content: space-between;
 }
+.clearfix::after{
+    content: "";
+    display:table;
+    clear:both;
+}
 
 
 /* !COMMONS */
@@ -81,6 +86,22 @@ img{
     background-color: plum;
 }
 
+/*benefit section*/
+
+.benefit{
+    background-color: plum;
+    padding: 3rem;
+}
+.benefit-card{
+    background-color: white;
+    padding: 2rem;
+    margin: 1rem;
+}
+.benefit h2{
+    text-align: center;
+}
+
+
 /* !TYPOGRAPHY */
 /* ************************************ */
 header li{
@@ -95,18 +116,6 @@ header a{
 /* !MEDIA QUERY */
 /* **************************************** */
 
-/* *HEADER */
-@media screen and (min-width:992px) {
-    .menu{
-        display: inline-block;
-    }
-    .hamburger{
-        display: none;
-    }
-    .container{
-        width: 80%;
-    }    
-}
 @media screen and (min-width:768px){
 
     .col{
@@ -118,4 +127,25 @@ header a{
     .testimonial-card{
         display: flex;
     }
+
+    .benefit-card{
+        width:calc((100% / 2) - 2rem );
+        float: inline-end;
+    } 
+}
+
+@media screen and (min-width:992px){
+    .menu{
+        display: inline-block;
+    }
+    .hamburger{
+        display: none;
+    }
+    .container{
+        width: 80%;
+    } 
+    .benefit-card{
+        width:calc((100% / 3) - 2rem );
+        float:right;
+    } 
 }
