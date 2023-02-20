@@ -110,6 +110,13 @@ img{
     width: 180px;
 }
 
+/* call to act section */
+.calltoact{
+    text-align: center;
+    padding: 3rem;
+    background-color: plum;
+}
+
 
 
 
