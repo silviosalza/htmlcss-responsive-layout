@@ -20,6 +20,9 @@
     height: 70px;
     background-color: rgb(110, 202, 233);
 }
+img{
+    width: 100%;
+}
 
 /*!LAYOUT */
 /* ************************************ */
@@ -38,9 +41,25 @@
     background-color: lightblue;
     border: 1px solid black;
     margin: 1rem;
-
 }
 
+/**MAIN */
+/* planning section */
+.planning{
+    text-align: center;
+    background-color: plum;
+    padding: 3rem 0;
+}
+.planning img{
+    width: 70%;
+}
+.planning p{
+    margin: 1rem;
+}
+.planning .box{
+    background-color: white;
+    margin: 0 5rem;
+}
 
 /* !TYPOGRAPHY */
 /* ************************************ */
