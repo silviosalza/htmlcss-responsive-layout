@@ -16,8 +16,8 @@
 
 /* !COMMONS */
 /* ********************************** */
-header{
-    height: 100px;
+.header{
+    height: 70px;
     background-color: rgb(110, 202, 233);
 }
 
@@ -32,6 +32,13 @@ header{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+.card{
+    /* debug */
+    background-color: lightblue;
+    border: 1px solid black;
+    margin: 1rem;
+
 }
 
 
@@ -59,6 +66,11 @@ header a{
     }
     .container{
         width: 80%;
+    }    
+}
+@media screen and (min-width:768px){
+
+    .col{
+        display: flex;
     }
-    
 }
