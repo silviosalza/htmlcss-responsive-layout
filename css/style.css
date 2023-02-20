@@ -101,6 +101,17 @@ img{
     text-align: center;
 }
 
+/* about us section */
+.aboutus{
+    padding: 3rem;
+    
+}
+.aboutus img{
+    width: 180px;
+}
+
+
+
 
 /* !TYPOGRAPHY */
 /* ************************************ */
@@ -132,6 +143,12 @@ header a{
         width:calc((100% / 2) - 2rem );
         float: inline-end;
     } 
+    .aboutus{
+        display: flex;
+    }
+    .aboutus img{
+        width: 250px;
+    }
 }
 
 @media screen and (min-width:992px){
