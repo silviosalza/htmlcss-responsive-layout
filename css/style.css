@@ -45,7 +45,7 @@ img{
 
 /** HEADER */
 .menu{
-    display: none;   
+    display: none;
 }
 
 .card{
@@ -53,7 +53,7 @@ img{
     background-color: #B5DDFF;
     border-radius: 25px;
     margin: 3rem;
-    line-height: 1.5rem;  
+    line-height: 1.5rem;
     padding: 1rem 1rem 0 1rem;
 
 }
@@ -101,7 +101,7 @@ img{
     width: 12rem;
     border-radius: 50%;
     object-fit: cover;
-    
+
 }
 .testimonial-card{
     text-align: center;
@@ -133,7 +133,7 @@ img{
 /* about us section */
 .aboutus{
     padding: 3rem;
-    
+
 }
 .aboutus img{
     width: 180px;
@@ -147,17 +147,29 @@ img{
 .calltoact{
     text-align: center;
     padding: 3rem;
-    background-color: plum;
+    color: white;
+    background-color:#9792E4;
+}
+.calltoact h2,
+.calltoact h3,
+.calltoact h6,
+.calltoact p{
+    padding: 1.5rem 0;
 }
 
 /* *FOOTER */
 footer{
     background-color: rgb(43, 43, 43);
+    color: white
 }
 .footer{
     padding: 3rem;
     text-align: center;
 }
+.footer p{
+    padding-bottom: 2rem
+}
+
 
 
 
@@ -173,9 +185,10 @@ footer{
 header li{
     list-style: none;
     padding: 0 0.7rem;
-    
+
 }
-a{
+header a,
+main a{
     text-decoration: none;
     color: inherit;
 }
@@ -195,7 +208,7 @@ a{
     background-color: white;
     color: black;
     font-weight: 700;
-    padding: 0.8rem;
+    padding: 0.8rem 2rem;
     border-radius: 25px;
 }
 .blu-button{
@@ -204,6 +217,7 @@ a{
     font-weight: 700;
     padding: 0.8rem;
     border-radius: 25px;
+    letter-spacing: 0.3rem;
 }
 .purple-button{
     background-color:#9792E4;
@@ -211,7 +225,7 @@ a{
     font-weight: 700;
     padding: 0.8rem 2rem;
     border-radius: 25px;
-    
+
 }
 .card h3{
     color: #0084FD;
@@ -283,6 +297,21 @@ a{
     font-weight: 700;
     padding: 2rem 0;
 }
+/* call to act section */
+.calltoact h6{
+    font-size: 1rem;
+}
+.calltoact h3{
+    font-size: 2rem;
+}
+.calltoact h2{
+    font-size: 4rem;
+    color: rgb(225, 191, 105);
+}
+.calltoact span{
+    color:#9792E4;
+    letter-spacing: 0.3rem;
+}
 
 
 /* !MEDIA QUERY */
@@ -307,7 +336,7 @@ a{
     .planning h2{
         font-size: 4rem;
     }
-    
+
     .testimonial-card{
         display: flex;
         align-items: center;
@@ -319,7 +348,7 @@ a{
     .benefit-card{
         width:calc((100% / 2) - 2rem );
         float: inline-end;
-    } 
+    }
     .aboutus{
         display: flex;
     }
@@ -345,11 +374,11 @@ a{
     .container{
         width: 80%;
         max-width: 1200px;
-    } 
+    }
     .planning .container{
         flex-direction: row;
         align-items: end;
-        
+
     }
     .planning h2{
         font-size: 2rem;
@@ -362,6 +391,6 @@ a{
     .benefit-card{
         width:calc((100% / 3) - 2rem );
         float:right;
-        
-    } 
+
+    }
 }
