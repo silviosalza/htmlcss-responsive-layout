@@ -106,8 +106,13 @@ img{
 .testimonial-card{
     text-align: center;
     margin: 1rem 0;
-    background-color: plum;
+    background-color:#9792E4;
+    color: white;
+    border-radius: 25px;
+    padding: 1rem;
+    line-height: 1.5rem;
 }
+
 
 /*benefit section*/
 
@@ -154,6 +159,8 @@ footer{
 
 /* !TYPOGRAPHY */
 /* ************************************ */
+/* header and jumbo */
+
 .header{
     color: white;
 }
@@ -211,6 +218,29 @@ header a{
 .planning h2{
     font-size: 2rem;
 }
+.box2 p{
+    font-style: italic;
+}
+
+/* testimonials */
+.name{
+    font-weight: 700;
+}
+.bio i{
+    font-size: 1.5rem;
+}
+.bio p{
+    padding-bottom: 1rem;
+}
+.testimonials h2{
+    color: #9792E4;
+    font-size: 2.5rem;
+    padding: 2rem 0;
+}
+.testimonials p{
+    padding-bottom: 2rem;
+}
+
 
 /* !MEDIA QUERY */
 /* **************************************** */
@@ -237,6 +267,10 @@ header a{
     
     .testimonial-card{
         display: flex;
+        align-items: center;
+    }
+    .testimonial-card p{
+        padding: 0 1rem;
     }
 
     .benefit-card{
@@ -277,6 +311,7 @@ header a{
     .planning h2{
         font-size: 2rem;
     }
+
     .box2,
     .box1{
         width: calc(100% / 2);
