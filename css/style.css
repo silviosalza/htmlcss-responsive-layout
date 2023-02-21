@@ -137,6 +137,10 @@ img{
 }
 .aboutus img{
     width: 180px;
+    border-radius: 50%;
+}
+.aboutus p{
+    padding: 2rem 2rem 1rem 0;
 }
 
 /* call to act section */
@@ -205,7 +209,7 @@ a{
     background-color:#9792E4;
     color: white;
     font-weight: 700;
-    padding: 0.8rem 3rem;
+    padding: 0.8rem 2rem;
     border-radius: 25px;
     
 }
@@ -265,6 +269,21 @@ a{
     font-size: 1.5rem;
     color: #9792E4;
 }
+/* about us section */
+.aboutus{
+    line-height: 2rem;
+}
+.aboutus h2{
+    color: #9792E4;
+    font-size: 3rem;
+}
+.aboutus-card p{
+    color: #9792E4;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 2rem 0;
+}
+
 
 /* !MEDIA QUERY */
 /* **************************************** */
