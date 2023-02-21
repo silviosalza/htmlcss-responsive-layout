@@ -20,6 +20,16 @@ body{
     display:table;
     clear:both;
 }
+.relative{
+    position: relative;
+}
+.absolute{
+    font-size: 3rem;
+    color: #9792E4;
+    position: absolute;
+    left: 130px;
+    top: 0;
+}
 
 
 /* !COMMONS */
@@ -52,7 +62,7 @@ img{
     /* debug */
     background-color: #B5DDFF;
     border-radius: 25px;
-    margin: 3rem;
+    margin: 2rem 1rem;
     line-height: 1.5rem;
     padding: 1rem 1rem 0 1rem;
 
@@ -65,7 +75,17 @@ img{
 .jumbo img{
     width: 280px;
     display: block;
-    padding-top: 1rem;
+    padding-top: 2rem;
+}
+.demo{
+    padding: 2rem 0;
+}
+#apple{
+    padding-top: 2rem;
+}
+
+.card p{
+    padding: 2rem 0;
 }
 
 
@@ -341,8 +361,9 @@ main a{
         display: flex;
         align-items: center;
     }
-    .testimonial-card p{
-        padding: 0 1rem;
+    
+    .bio p{
+        padding: 2rem 2rem;
     }
 
     .benefit-card{
@@ -354,6 +375,11 @@ main a{
     }
     .aboutus img{
         width: 250px;
+    }
+    .absolute{
+        position: absolute;
+        left: 190px;
+        top: 0;
     }
 }
 
@@ -367,6 +393,10 @@ main a{
     .card:first-child{
         display: flex;
     }
+    .card1:last-child{
+        align-items:end;
+    }
+
     .text-center{
         display: flex;
         flex-direction: column;
