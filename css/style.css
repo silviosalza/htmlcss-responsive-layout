@@ -26,7 +26,7 @@ body{
 /* ********************************** */
 .header{
     height: 70px;
-    background-color: rgb(110, 202, 233);
+    background-color: #0084FD;
 }
 img{
     width: 100%;
@@ -35,6 +35,9 @@ img{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+.text-center{
+    text-align: center;
 }
 
 /*!LAYOUT */
@@ -47,21 +50,32 @@ img{
 
 .card{
     /* debug */
-    background-color: lightblue;
-    border: 1px solid black;
-    margin: 1rem;
+    background-color: #B5DDFF;
+    border-radius: 25px;
+    margin: 3rem;
+    line-height: 1.5rem;  
+    padding: 1rem 1rem 0 1rem;
+
 }
+
 .header .container{
     padding: 0 2rem;
     height: 70px;
 }
+.jumbo img{
+    width: 280px;
+    display: block;
+    padding-top: 1rem;
+}
+
 
 /**MAIN */
 /* planning section */
 .planning{
     text-align: center;
-    background-color: plum;
-    padding: 3rem 0;
+    background-color: #9792E4;
+    padding: 2rem 1rem;
+    color: white;
 }
 .planning img{
     width: 70%;
@@ -71,7 +85,10 @@ img{
 }
 .planning .box2{
     background-color: white;
-    margin: 0 5rem;
+    margin: 0 2rem;
+    border-radius: 25px;
+    color: black;
+    padding: 1rem;
 }
 
 /* testimonal section */
@@ -143,7 +160,7 @@ footer{
 
 header li{
     list-style: none;
-    padding: 0 1rem;
+    padding: 0 0.7rem;
     
 }
 header a{
@@ -153,12 +170,46 @@ header a{
 .header .fa-solid{
     font-size: 2rem;
 }
+.card .fa-solid{
+    font-size: 100px;
+    color:#0084FD;
+    padding: 1rem 0;
+}
+.card p{
+    padding-bottom: 1rem;
+}
+
 .white-button{
     background-color: white;
     color: black;
     font-weight: 700;
     padding: 0.8rem;
     border-radius: 25px;
+}
+.blu-button{
+    background-color: rgb(42, 196, 248);
+    color: white;
+    font-weight: 700;
+    padding: 0.8rem;
+    border-radius: 25px;
+}
+.card h3{
+    color: #0084FD;
+    padding: 1rem 0;
+}
+.card p{
+    color: rgb(71, 71, 71);
+}
+
+/* main */
+/* plan section */
+.fa-arrow-down{
+    background-color: #9792E4;
+    border-radius: 50%;
+    padding: 15px;
+}
+.planning h2{
+    font-size: 2rem;
 }
 
 /* !MEDIA QUERY */
@@ -176,9 +227,14 @@ header a{
     .col:first-child{
         width: calc(100% / 3 * 2);
     }
-    .planning{
+    .planning .container{
         display: flex;
+        flex-direction: column;
     }
+    .planning h2{
+        font-size: 4rem;
+    }
+    
     .testimonial-card{
         display: flex;
     }
@@ -202,9 +258,29 @@ header a{
     .hamburger{
         display: none;
     }
+    .card:first-child{
+        display: flex;
+    }
+    .text-center{
+        display: flex;
+        flex-direction: column;
+    }
     .container{
-        width: 80%;
+        width: 70%;
+        max-width: 1000px;
     } 
+    .planning .container{
+        flex-direction: row;
+        align-items: end;
+        
+    }
+    .planning h2{
+        font-size: 2rem;
+    }
+    .box2,
+    .box1{
+        width: calc(100% / 2);
+    }
     .benefit-card{
         width:calc((100% / 3) - 2rem );
         float:right;
