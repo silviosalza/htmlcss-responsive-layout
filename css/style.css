@@ -117,16 +117,17 @@ img{
 /*benefit section*/
 
 .benefit{
-    background-color: plum;
+    background-color:#9792E4;
     padding: 3rem;
 }
 .benefit-card{
     background-color: white;
+    border-radius: 25px;
     padding: 2rem;
     margin: 1rem;
 }
-.benefit h2{
-    text-align: center;
+.benefit-card p{
+    padding: 2rem 0;
 }
 
 /* about us section */
@@ -170,7 +171,7 @@ header li{
     padding: 0 0.7rem;
     
 }
-header a{
+a{
     text-decoration: none;
     color: inherit;
 }
@@ -199,6 +200,14 @@ header a{
     font-weight: 700;
     padding: 0.8rem;
     border-radius: 25px;
+}
+.purple-button{
+    background-color:#9792E4;
+    color: white;
+    font-weight: 700;
+    padding: 0.8rem 3rem;
+    border-radius: 25px;
+    
 }
 .card h3{
     color: #0084FD;
@@ -240,7 +249,22 @@ header a{
 .testimonials p{
     padding-bottom: 2rem;
 }
+/* benefit section */
+.benefit h2{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
 
+.number{
+    font-size: 4rem;
+    color: #9792E4;
+}
+.benefit-card h3{
+    font-size: 1.5rem;
+    color: #9792E4;
+}
 
 /* !MEDIA QUERY */
 /* **************************************** */
@@ -300,8 +324,8 @@ header a{
         flex-direction: column;
     }
     .container{
-        width: 70%;
-        max-width: 1000px;
+        width: 80%;
+        max-width: 1200px;
     } 
     .planning .container{
         flex-direction: row;
@@ -319,5 +343,6 @@ header a{
     .benefit-card{
         width:calc((100% / 3) - 2rem );
         float:right;
+        
     } 
 }
